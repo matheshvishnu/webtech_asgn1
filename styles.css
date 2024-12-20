@@ -1,0 +1,180 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #e0f7fa, #80deea); /* Soft gradient background */
+    color: #333;
+}
+
+header {
+    background: #00796b; /* Teal color */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* White background for main content */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004d40; /* Darker teal */
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.hero-content h2 {
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 0 0 150px; /* Fixed width for the image container */
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Crop the image to fit the container */
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%; /* Ensure the image is circular */
+}
+
+.about {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-info, .career-objective, .education, .technical-skills, .projects, .internships, .activities, .personal-details, .references {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #00796b; /* Teal color for headings */
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #00796b; /* Teal color */
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button styles */
+.cta-button {
+    display: inline-block;
+    background: #e64a19; /* Orange color */
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #d84315; /* Darker orange on hover */
+}
+
+/* Resume specific styles */
+.picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.picture .image {
+    margin-bottom: 10px;
+}
+
+.picture img {
+    border-radius: 50%; /* Circular profile picture */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section div {
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    main {
+        padding: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
